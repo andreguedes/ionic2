@@ -4,6 +4,7 @@ import { StatusBar } from 'ionic-native';
 
 import { HomePage } from './pages/home/home';
 import { MenuTestPage } from './pages/menu-test/menu-test';
+import { GeneratedTestPage } from './pages/generated-test/generated-test';
 
 
 @Component({
@@ -22,6 +23,9 @@ export class MyApp {
       },
       {
         component: MenuTestPage, title: 'Menu Test', icon: 'menu'
+      },
+      {
+        component: GeneratedTestPage, title: 'Genererated Page', icon: 'home'
       }
     ]
 
