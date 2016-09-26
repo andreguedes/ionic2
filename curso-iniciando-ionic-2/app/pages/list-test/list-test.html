@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+      <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-itme-group>
+      <ion-item-divider>Itens</ion-item-divider>
+    <ion-item-sliding *ngFor="let p of personagens">
+      <ion-item>
+        <h2>{{ p }}</h2>
+      </ion-item>
+      <ion-item-options side="right">
+        <button primary>
+          <ion-icon name="text"></ion-icon>
+          Info
+        </button>
+        <button secondary>
+          <ion-icon name="add"></ion-icon>
+          Add
+        </button>
+        <button danger>
+          <ion-icon name="close"></ion-icon>
+          Remove
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-itme-group>
+
+  </ion-list>
+
+</ion-content>
